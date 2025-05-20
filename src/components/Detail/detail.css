@@ -1,0 +1,208 @@
+.banner{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 60px;
+}
+.score{
+    border-radius: 50%;
+    border: green solid;
+    background-color: rgb(41, 41, 41);
+    font-weight: bolder;
+    padding: 5px;
+    margin-right: 5px;
+}
+.score-text{
+    margin-right: 5px;
+}
+.heart{
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+    padding: 0;
+}
+.cast-info{
+    position: relative;
+    z-index: 1000;
+    background-color: #EEEEEE;
+}
+.banner-img-detail{
+    filter: brightness(30%);
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+    margin-bottom: 30px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.cast{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+.info{
+    text-align: center;
+    display: flex;
+    z-index: 100;
+}
+.info h1{
+    margin: 0;
+}
+.info-text{
+    margin-left: 20px;
+    color: white;
+    text-align: start;
+}
+.detail-content{
+    display: flex;
+    text-align: start;
+    margin: 0px 40px;
+}
+.production h2{
+    font-family: "Hammersmith One";
+}
+.left-page .cast-title{
+    font-family: "Hammersmith One";
+    margin: 0;
+}
+.production .cast-title{
+    font-family: "Hammersmith One";
+    margin: 0;
+}
+.production{
+    flex: 1;
+    text-align: start;
+    margin-left:20px;
+}
+.left-page{
+    flex:4;
+}
+.profile-picture{
+    border-radius: 10px; 
+}
+.info-person{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+} 
+.list li button{
+    border: none;
+    text-align: left;
+    width: 100%;
+    background-color: #dadde4;
+    margin: 10px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    font-family: "Hammersmith One";
+    cursor: pointer;
+}
+.list li button:hover{
+    filter: brightness(95%);
+}
+.list li::marker{
+    color: #212A3E;
+}
+.recommendations h2{
+    font-family:"Hammersmith One" ;
+    padding: 0px 40px;
+}
+.media h2{
+    font-family:"Hammersmith One" ;
+    padding: 0px 40px;
+}
+.reviews{
+    margin: 40px;
+}
+.reviews h2{
+    font-family:"Hammersmith One" ;
+    padding: 0px;
+}
+.keyword-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.keyword{
+    margin: 5px 10px 5px 0px;
+    background-color: #d6e0f3;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.provider{
+    align-items: center;
+    display: flex;
+}
+.platform-logo{
+    height: 2em;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.buy{
+    margin-bottom: 10px;
+    line-height: 1.2em;
+}
+.buttons-row{
+    display: flex;
+    align-items: center; 
+}
+.rating-btn{
+    margin-left: 10px;
+}
+@media (max-width: 760px) {
+    .banner{
+        padding: 30px 20px;
+    }
+    .banner-img-detail{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    .detail-content{
+        flex-direction: column;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .info h1{
+        font-size: 1.3em;
+        margin: 10px 0;
+    }
+    .info p{
+        font-size: 0.9em;
+    }
+    .detail-poster{
+        width: 170px;
+    }
+    .score-text{
+        display: none;
+    }
+
+    .buttons-row p{
+        margin: 5px;
+    }
+    .cast{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .left-page .cast-title{
+        font-size: 1.8em;
+    }
+    .production{
+        margin: 0;
+    }
+    .production .cast-title{
+        font-size: 1.8em;
+    }
+    .production h2{
+        font-size: 1.8em;
+    }
+    .reviews h2{
+        font-size: 1.8em;
+    }
+}

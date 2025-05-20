@@ -1,0 +1,12 @@
+.catalogue {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+@media (max-width: 760px) {
+    .catalogue{
+        justify-content: center;
+    }
+}

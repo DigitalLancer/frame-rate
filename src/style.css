@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Lalezar&display=swap');
+
+body{
+    
+    margin: 0;
+    background-color: #F1F6F9;
+}
+.side-scroll{
+    display: grid;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    column-gap: 2em;
+    margin: 20px 40px;    
+}
+.side-scroll .card{
+    width: 170px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 0.8em;
+}
+.home h2{   
+    font-family: "Hammersmith One";
+    font-weight:bolder ;
+    margin: 0 0 0 40px;
+}
+.side-scroll::-webkit-scrollbar{ 
+    height: 0.8em;
+    
+}
+.side-scroll::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 10px;
+}
+.side-scroll::-webkit-scrollbar-track{
+    background: rgb(202, 202, 202);
+    border-radius: 10px;
+}
+.container{
+    width: 75%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #EEEEEE;
+}
+.content{
+    display: flex;
+    margin: 0 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-left{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-content{
+    margin: auto;
+    padding: 0 60px;
+}
+.btn-card{
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 0;
+    transition: all 0.2s ease-in-out;
+}
+.btn-card:hover{
+    filter: brightness(80%);
+}
+.detail-poster{
+    border-radius: 10px;
+}
+.container h2{
+    padding: 20px 0;
+    margin: 0;
+    font-size: 2em;
+    color: rgb(49, 49, 49);
+}
+.container .home h2{
+    padding: 40px;
+    margin: 0;
+    font-size: 2em;
+    color: rgb(49, 49, 49);
+}
+.info p{
+    color: white;
+}
+@media (max-width: 1024px) {
+    .container{
+        width: 100%;
+    }
+    .home h2{
+        font-size: 1.7em;
+    }
+    .container h2{
+        padding-bottom: 20px;
+    }
+}
+@media (max-width: 760px) {
+    .container-content{
+        padding: 0 30px;
+    }
+}
