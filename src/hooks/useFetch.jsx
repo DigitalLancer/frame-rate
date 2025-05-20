@@ -3,7 +3,8 @@ const useFetch = (url) =>{
     const [data, setData]=useState(null);
     useEffect(()=>{
       fetch(url, {
-        headers: {Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI1YThmYzZjMmQ4OGZiN2I1ZDU4MDE0OTc3YWQwMDI1ZSIsInN1YiI6IjY1ZmJlODFlMGMxMjU1MDE3ZTBhNzc1YiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.qwoVansyGDWn4UeHiB3DhBwd3nkWhH23zeh1HqiQlf4'}
+        headers: {Authorization: `Bearer ${import.meta.env.VITE_TMDB_API_KEY}`}
+        
       })
       .then(resp =>
         resp.json()

@@ -12,8 +12,7 @@ import Discover from './pages/Discover.jsx';
 function App() {
   const {pathname}=useLocation();
   useEffect(() => {
-    console.log("scroll function called");
-    window.scrollTo(0, 0)
+    console.log(import.meta.env.VITE_TMDB_API_KEY);
   }, [pathname])
   return (
     <>
